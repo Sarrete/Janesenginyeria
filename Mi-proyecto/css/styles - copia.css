@@ -1,0 +1,133 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+.container {
+    padding-left: 150px; /* Espacio para el menú */
+}
+
+/* Encabezado */
+header {
+    background-color: #48bd55;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Menú lateral */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 100%;
+    background-color: #333;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin: 20px 0;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-size: 18px;
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.menu ul li a:hover {
+    background-color: #555;
+}
+
+/* Secciones de trabajo */
+.work-section {
+    margin: 50px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Piñones laterales */
+.gears-left, .gears-right {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background: url('../images/Gear.png') no-repeat center center;
+    background-size: contain;
+    /* No animación aquí */
+}
+
+.gears-left {
+    top: 50%;
+    left: -3%;
+}
+
+.gears-right {
+    top: 50%;
+    right: -3%;
+}
+
+/* Estilos para la galería */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.galeria img {
+    width: calc(33.333% - 10px);
+    border-radius: 5px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 20px; /* Reduce el padding en pantallas más pequeñas */
+    }
+
+    .menu {
+        width: 100%; /* Hacer que el menú ocupe toda la pantalla */
+        height: auto; /* Ajustar la altura */
+    }
+
+    .work-section {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .galeria img {
+        width: calc(50% - 10px); /* Dos imágenes en pantallas pequeñas */
+    }
+}
